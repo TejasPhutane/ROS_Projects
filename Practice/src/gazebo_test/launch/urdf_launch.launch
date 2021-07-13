@@ -1,0 +1,11 @@
+<launch>
+
+  <include>
+
+	<arg name="world_name" value="$(find gazebo_test)/urdf/urdf_launch.launch"/>
+
+    <param name="robot_description" command="cat '$(find gazebo_test)/urdf/first_urdf.urdf'" />
+
+    
+  </include>
+</launch>

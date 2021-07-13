@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <!--teleop node-->
+
+  <node pkg="map_my_world" type="teleop.py" name="teleop_twist_keyboard"  output="screen"/>
+
+</launch>

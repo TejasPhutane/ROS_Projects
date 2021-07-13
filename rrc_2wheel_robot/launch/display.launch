@@ -1,0 +1,18 @@
+<launch>
+  <arg
+    name="model" default="$(find rrc_2wheel_robot)/urdf/rrc_2wheel_robot.xacro"/>
+  <param
+    name="robot_description"
+    textfile="$(find rrc_2wheel_robot)/urdf/rrc_2wheel_robot.xacro" />
+
+  <include file="$(find rrc_2wheel_robot)/launch/gazebo.launch">
+    <arg name="model" value="$(arg model)"/>
+  </include>
+  
+  <!-- Show in Rviz -->
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find rrc_2wheel_robot)/config/rrc_bot_sensors.rviz" required="true" />
+</launch>

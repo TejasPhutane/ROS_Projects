@@ -1,0 +1,7 @@
+# set urdf joint effort
+time a           # joint to apply wrench (linear force and torque)
+float64 b              # effort to apply
+
+---
+bool success                
+  

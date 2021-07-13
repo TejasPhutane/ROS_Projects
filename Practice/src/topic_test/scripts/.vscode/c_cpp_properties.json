@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/anishpawar/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/anishpawar/catkin_ws/src/learning_tf/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}

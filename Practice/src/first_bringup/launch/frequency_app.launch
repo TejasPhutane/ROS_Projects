@@ -1,0 +1,5 @@
+<launch>
+
+	<param name= "/frequency" type= "double" value = "1.0"/>
+	<node name="$(anon foo)" pkg="topic_test" type="Number_Publisher.py" />
+</launch>
